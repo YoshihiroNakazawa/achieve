@@ -11,8 +11,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   gem 'byebug'
-  gem 'web-console', '~> 2.0'
+  #gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem "rspec-rails"
+  gem "factory_girl_rails"
 end
 gem 'twitter-bootstrap-rails'
 gem 'jquery-turbolinks'
@@ -21,6 +23,7 @@ gem 'devise'
 gem 'faker'
 group :development do
   gem 'letter_opener_web'
+  gem 'web-console', '~> 2.0'
   #gem 'dotenv-rails'
 end
 gem 'rails_admin'
@@ -46,3 +49,9 @@ gem 'fog'
 gem 'dotenv-rails'
 gem 'unicorn'
 gem 'therubyracer', platforms: :ruby
+group :test do
+  gem "capybara"
+  gem "database_cleaner"
+  gem "launchy"
+  gem "selenium-webdriver"
+end
